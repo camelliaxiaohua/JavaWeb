@@ -8,16 +8,13 @@ categories:
 
 ---
 
-!!! note 目录
-<!-- toc -->
-
 
 
 #Servlet：动态web应用请求/响应过程中角色与协议分析
 
 ## 一、动态web应用请求/响应过程中角色与协议分析
 
-![](JavaWeb/assets/动态web应用请求响应过程中角色与协议分析.png)
+![](assets/动态web应用请求响应过程中角色与协议分析.png)
 
 ### 1.1  有哪些角色（在整个BS结构的系统当中，有哪些角色参与）
 
@@ -34,7 +31,7 @@ categories:
 - Browser  和   Web Server之间有一套传输协议：HTTP协议（超文本传输协议）。
 - webapp开发团队和DB Server的开发团队之间有一套规范：JDBC规范。
 
-![](JavaWeb\assets\角色和角色之间需要遵守哪些规范.png)
+![](assets\角色和角色之间需要遵守哪些规范.png)
 
 ### 1.3 Servlet规范是一个什么规范？
 
