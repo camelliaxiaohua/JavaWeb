@@ -129,7 +129,7 @@ categories:
 - B --> S （请求request）
 - S --> B （响应response）
 
-![](https://github.com/camelliaxiaohua/JavaWeb/blob/master/assets/Servlet%E9%80%9A%E4%BF%A1%E5%8E%9F%E7%90%86.png)
+![](../assets/Servlet通信原理.png)
 
 
 ---
