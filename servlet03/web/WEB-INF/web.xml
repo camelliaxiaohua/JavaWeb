@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+         version="6.0">
+
+<!--    ConfigTestServlet注册-->
+    <servlet>
+        <servlet-name>configServlet</servlet-name>
+        <servlet-class>servlet.ConfigTestServlet</servlet-class>
+        <!--这里是可以配置一个Servlet对象的初始化信息的。-->
+        <init-param>
+            <param-name>driver</param-name>
+            <param-value>com.mysql.cj.jdbc.Driver</param-value>
+        </init-param>
+        <init-param>
+            <param-name>url</param-name>
+            <param-value>jdbc:mysql://localhost:3306/bjpowernode</param-value>
+        </init-param>
+        <init-param>
+            <param-name>user</param-name>
+            <param-value>root</param-value>
+        </init-param>
+        <init-param>
+            <param-name>password</param-name>
+            <param-value>root1234</param-value>
+        </init-param>
+<!--以上<servlet></servlet>标签中的<init-param></init-param>是初始化参数。这个初始化参数信息会自动被TomCat封装到ServletConfig对象当中。-->
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>configServlet</servlet-name>
+        <url-pattern>/test</url-pattern>
+    </servlet-mapping>
+<!--    ConfigTestServlet2注册-->
+    <servlet>
+        <servlet-name>configServlet2</servlet-name>
+        <servlet-class>servlet.ConfigTestServlet2</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>configServlet2</servlet-name>
+        <url-pattern>/test2</url-pattern>
+    </servlet-mapping>
+    <!--    ConfigTestServlet3注册-->
+    <servlet>
+        <servlet-name>configServlet3</servlet-name>
+        <servlet-class>servlet.ConfigTestServlet3</servlet-class>
+        <!--这里是可以配置一个Servlet对象的初始化信息的。-->
+        <init-param>
+            <param-name>driver</param-name>
+            <param-value>com.mysql.cj.jdbc.Driver</param-value>
+        </init-param>
+        <init-param>
+            <param-name>url</param-name>
+            <param-value>jdbc:mysql://localhost:3306/bjpowernode</param-value>
+        </init-param>
+        <init-param>
+            <param-name>user</param-name>
+            <param-value>root</param-value>
+        </init-param>
+        <init-param>
+            <param-name>password</param-name>
+            <param-value>24211</param-value>
+        </init-param>
+        <!--以上<servlet></servlet>标签中的<init-param></init-param>是初始化参数。这个初始化参数信息会自动被TomCat封装到ServletConfig对象当中。-->
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>configServlet3</servlet-name>
+        <url-pattern>/test3</url-pattern>
+    </servlet-mapping>
+</web-app>
