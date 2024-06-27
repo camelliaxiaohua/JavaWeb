@@ -8,3 +8,4 @@
 ##### 4. [Servlet：开发一个带有Servlet（Java程序）的webapp](https://github.com/camelliaxiaohua/JavaWeb/blob/master/servlet00/%20Servlet%EF%BC%9A%E5%BC%80%E5%8F%91%E4%B8%80%E4%B8%AA%E5%B8%A6%E6%9C%89Servlet%EF%BC%88Java%E7%A8%8B%E5%BA%8F%EF%BC%89%E7%9A%84webapp.md)
 ##### 5. [Servlet：在Idea开发环境当中开发Servlet程序](https://github.com/camelliaxiaohua/JavaWeb/blob/master/servlet01/document/Servlet%EF%BC%9A%E5%9C%A8Idea%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E5%BD%93%E4%B8%AD%E5%BC%80%E5%8F%91Servlet%E7%A8%8B%E5%BA%8F.md)
 ##### 6. [Servlet对象的生命周期](https://github.com/camelliaxiaohua/JavaWeb/blob/master/servlet02/document/Servlet%E5%AF%B9%E8%B1%A1%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F.md)
+##### 7. [Servlet：适配器思想](https://github.com/camelliaxiaohua/JavaWeb/blob/master/servlet02/document/%20Servlet%EF%BC%9A%E9%80%82%E9%85%8D%E5%99%A8%E6%80%9D%E6%83%B3.md)
