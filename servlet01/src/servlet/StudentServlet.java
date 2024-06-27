@@ -5,6 +5,7 @@ import jakarta.servlet.*;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.*;
+import java.util.Locale;
 import java.util.ResourceBundle;
 
 public class StudentServlet implements Servlet {
@@ -28,7 +29,7 @@ public class StudentServlet implements Servlet {
         PreparedStatement ps = null;
         ResultSet rs = null;
         //绑定资源
-        ResourceBundle resource = ResourceBundle.getBundle("jabc_zh_CN");
+        ResourceBundle resource = ResourceBundle.getBundle("jabc_zh_CN", Locale.CHINA);
         String driver = resource.getString("driver");
         String url = resource.getString("url");
         String name = resource.getString("username");
