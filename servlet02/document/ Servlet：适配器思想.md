@@ -48,30 +48,25 @@ categories:
 
     - 思考一下Tomcat服务器伪代码：
 
-        - ```java
+    - ```java
       public class Tomcat {
-          public static void main(String[] args){
-              // .....
-              // Tomcat服务器伪代码
-              // 创建LoginServlet对象（通过反射机制，调用无参数构造方法来实例化LoginServlet对象）
-              Class clazz = Class.forName("com.bjpowernode.javaweb.servlet.LoginServlet");
-              Object obj = clazz.newInstance();
-              
-              // 向下转型
-              Servlet servlet = (Servlet)obj;
-              
-              // 创建ServletConfig对象
-              // Tomcat服务器负责将ServletConfig对象实例化出来。
-              // 多态（Tomcat服务器完全实现了Servlet规范）
-              ServletConfig servletConfig = new org.apache.catalina.core.StandardWrapperFacade();
-              
-              // 调用Servlet的init方法
-              servlet.init(servletConfig);
-              
-              // 调用Servlet的service方法
-              // ....
-             
-          } 
+      public static void main(String[] args){
+      // .....
+      // Tomcat服务器伪代码
+      // 创建LoginServlet对象（通过反射机制，调用无参数构造方法来实例化LoginServlet对象）
+      Class clazz = Class.forName("servlet.LoginServlet");
+      Object obj = clazz.newInstance();
+      // 向下转型
+      Servlet servlet = (Servlet)obj;
+      // 创建ServletConfig对象
+      // Tomcat服务器负责将ServletConfig对象实例化出来。
+      // 多态（Tomcat服务器完全实现了Servlet规范）
+      ServletConfig servletConfig = new org.apache.catalina.core.StandardWrapperFacade();
+      // 调用Servlet的init方法
+      servlet.init(servletConfig);
+      // 调用Servlet的service方法
+      // ....
+         }
       }
       ```
 
