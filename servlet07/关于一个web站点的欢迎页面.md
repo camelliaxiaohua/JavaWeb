@@ -79,7 +79,7 @@
     - Tomcat服务器的全局欢迎页面是：`index.html index.htm index.jsp`。如果你一个web站点没有设置局部的欢迎页面，Tomcat服务器就会以index.html index.htm index.jsp作为一个web站点的欢迎页面。
    > 注意原则：局部优先原则。（就近原则）
 
-#### 14.2.3 欢迎页可以是一个Servlet
+#### 15.2.3 欢迎页可以是一个Servlet
 
 欢迎页就是一个资源，既然是一个资源，那么可以是静态资源，也可以是动态资源。静态资源如：index.html、welcome.html等；动态资源如：Servlet类。
 
