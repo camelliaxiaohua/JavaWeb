@@ -18,6 +18,14 @@ public class GetServlet extends GenericServlet {
         // 响应一些内容到浏览器上。
         res.setContentType("text/html;charset=utf-8");
         PrintWriter out = res.getWriter();
-        out.println("get servlet");
+        out.println("<!doctype html>");
+        out.println("<html>");
+        out.println("    <head>");
+        out.println("        <title>from get servlet</title>");
+        out.println("    </head>");
+        out.println("    <body>");
+        out.println("        <h1>from post servlet</h1>");
+        out.println("    </body>");
+        out.println("</html>");
     }
 }
