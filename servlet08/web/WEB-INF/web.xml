@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+         version="6.0">
+    
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+        <welcome-file>register.html</welcome-file>
+    </welcome-file-list>
+    <servlet>
+        <servlet-name>requset</servlet-name>
+        <servlet-class>servlet.RequestTestServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>requset</servlet-name>
+        <url-pattern>/request</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>aServlet</servlet-name>
+        <servlet-class>servlet.AServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>aServlet</servlet-name>
+        <url-pattern>/a</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>bServlet</servlet-name>
+        <servlet-class>servlet.BServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>bServlet</servlet-name>
+        <url-pattern>/b</url-pattern>
+    </servlet-mapping>
+</web-app>
